@@ -232,6 +232,4 @@ app.get('/', (req, res) => {
   res.send('🍽️ Foodify server is ready');
 });
 
-app.listen(port, () => {
-  console.log(`🚀 Server running on port ${port}`);
-});
+module.exports = app; // ✅ Required for Vercel
